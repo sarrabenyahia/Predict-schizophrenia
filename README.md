@@ -9,7 +9,7 @@ This project was was realised with [José Ángel García Sánchez 👨🏻‍�
 Predict schizophrenia from brain grey matter (GM). schizophrenia is associated with diffuse and complex pattern of brain atrophy. We will try to learn a predictor of the clinical status (patient with schizophrenia vs. healthy control) using GM measurements on the brain participants.
 
 
-![Alt text]("https://upload.wikimedia.org/wikipedia/commons/8/83/Cingulate_region_of_human_brain.jpg-url")
+![Alt text](Cingulate_region_of_human_brain.jpg)
 
 ## Dataset
 
