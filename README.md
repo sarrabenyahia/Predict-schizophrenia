@@ -29,8 +29,9 @@ using [cat12](http://www.neuro.uni-jena.de/cat/) software which provides:
   
 ## Running the project locally
 
-### Installation
+After cloning the repo, you should follow these instructions : 
 
+### Installation
 This starting kit requires Python and the following dependencies:
 
 * `numpy`
@@ -75,7 +76,9 @@ We began by choosing to take into account the regions of interest as features of
 Data scaling can be beneficial in many cases, especially if the characteristics have different units or scales. Here are some of the advantages of data scaling:
 
 Improved performance: data scaling can help improve the performance of many machine learning models, as it can facilitate the search for a good decision boundary. This is particularly important for models that use distance-based measures, such as the SVC (Support Vector Classification) model.
+
 Reduced convergence time: data scaling can also help reduce the convergence time of the model, as it can facilitate the search for a good solution. This can be particularly beneficial for models that use optimization algorithms, such as gradient descent.
+
 Reduced sensitivity to outliers: data scaling can also help reduce the model's sensitivity to outliers, as it can reduce the impact of large values on the model. This can be particularly advantageous for models that are sensitive to outliers, such as linear regression.
 
 ### 2. Model : Voting Classifier
@@ -84,12 +87,30 @@ An ensemble model is a machine learning model that combines the predictions of s
 
 Improved performance: ensemble models can often achieve greater accuracy and better performance than a single model, due to the diversity of the individual models.
 Better robustness: ensemble models are often more robust and less prone to overfitting than single models, as they combine the predictions of several models and reduce dependence on a single model.
+
 Reduced variance: ensemble models can help reduce the variance of predictions, which can be particularly beneficial when individual models have high variance and a lot of noise in the data.
+
 Improved generalization: ensemble models can often better generalize to unseen data than single models, because they combine the predictions of several models and reduce the dependence on a single model.
 
 Our sub-models are as follows:
 
 An SVC model is a supervised learning algorithm used for classification tasks. It works by finding the hyperplane in a high-dimensional feature space that separates the classes of data to the greatest extent possible. The hyperplane is chosen such that the distance between it and the closest data points of each class is maximized. These closest data points are called "support vectors." This ensures that the model is robust and resistant to noise in the data.
+
 A NuSVC model is a variation of the SVC model that uses the nu parameter to control the number of support vectors and the regularization parameter C to control the complexity of the model. It is a powerful and widely used tool for classification tasks.
+
 Finally, gradient boosting relies on gradient learning that builds a prediction model in sequence, adjusting each new model to correct the errors made by previous models. This process is repeated until the desired number of models is reached. Finally, the predictions of all the models are combined to produce the final prediction. However, it can be quite complex to implement and often requires fine-tuning of the hyperparameters to achieve good performance. We have hyperparameterized the depth and number of estimators.
 
+### 3. Model : Metrics
+
+The testing of our model is done with 5 folds of cross validation. The results in the public test set are : 
+
+|----------------------------|
+| Bagged scores              |
+|----------------------------|
+| score | auc  | bacc        |
+|-------|------|-------------|
+| valid | 0.82 | 0.47        |
+| test  | 0.86 | 0.57        |
+|----------------------------|
+
+In the private test, the model has an AUC of 0.89.
