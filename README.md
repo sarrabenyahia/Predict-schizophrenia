@@ -104,13 +104,12 @@ Finally, gradient boosting relies on gradient learning that builds a prediction 
 
 The testing of our model is done with 5 folds of cross validation. The results in the public test set are : 
 
-|----------------------------|
-| Bagged scores              |
-|----------------------------|
-| score | auc  | bacc        |
-|-------|------|-------------|
-| valid | 0.82 | 0.47        |
-| test  | 0.86 | 0.57        |
-|----------------------------|
+----------------------------
+Bagged scores
+----------------------------
+        score   auc  bacc
+        valid  0.82  0.47
+        test   0.86  0.57
+
 
 In the private test, the model has an AUC of 0.89.
