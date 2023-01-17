@@ -3,6 +3,7 @@
 
 This project was carried out as part of an exam-project of Professor @duchesnay ’s Machine Learning material in the MoSEF Data Science Course of Paris 1 Panthéon Sorbonne.
 You can find the initial repo here: https://github.com/duchesnay/brain_anatomy_schizophrenia.git
+This project was conducted with 
 
 Predict schizophrenia from brain grey matter (GM). schizophrenia is associated with diffuse and complex pattern of brain atrophy. We will try to learn a predictor of the clinical status (patient with schizophrenia vs. healthy control) using GM measurements on the brain participants.
 
@@ -24,6 +25,10 @@ using [cat12](http://www.neuro.uni-jena.de/cat/) software which provides:
   This npz contains the 3D mask and the affine transformation to MNI
   referential. Masking the brain provide *flat* 331 695 input features (voxels)
   for each participant.
+  
+## Running the project locally
+
+
 
 ## Scientific Rationale for Model Selection
 
