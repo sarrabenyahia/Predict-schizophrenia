@@ -1,9 +1,10 @@
 # Predict schizophrenia using brain anatomy
 
 
-This project was carried out as part of an exam-project of Professor @duchesnay ’s Machine Learning material in the MoSEF Data Science Course of Paris 1 Panthéon Sorbonne.
+This project was carried out as part of an exam-project of Professor [Edouard Duchesnay](https://github.com/duchesnay) 's Machine Learning material in the MoSEF Data Science Course of Paris 1 Panthéon Sorbonne.
 You can find the initial repo here: https://github.com/duchesnay/brain_anatomy_schizophrenia.git
-This project was conducted with 
+This project was was realised with [José Ángel García Sánchez 👨🏻‍💻](https://github.com/Pse1234)
+
 
 Predict schizophrenia from brain grey matter (GM). schizophrenia is associated with diffuse and complex pattern of brain atrophy. We will try to learn a predictor of the clinical status (patient with schizophrenia vs. healthy control) using GM measurements on the brain participants.
 
@@ -28,7 +29,39 @@ using [cat12](http://www.neuro.uni-jena.de/cat/) software which provides:
   
 ## Running the project locally
 
+### Installation
 
+This starting kit requires Python and the following dependencies:
+
+* `numpy`
+* `scipy`
+* `pandas`
+* `scikit-learn`
+* `matplolib`
+* `seaborn`
+* `jupyter`
+* `ramp-workflow`
+
+To run a submission and the notebook you will need the dependencies listed in requirements.txt.
+You can install the dependencies with the following command-line:
+
+```
+pip install -U -r requirements.txt
+```
+
+### Getting started
+
+1. download the data locally:
+
+```
+python download_data.py
+```
+
+2.Running the model locally:
+
+```
+ramp-test --submission starting_kit
+```
 
 ## Scientific Rationale for Model Selection
 
