@@ -2,9 +2,8 @@
 
 
 This project was carried out as part of an exam-project of Professor [Edouard Duchesnay](https://github.com/duchesnay) 's Machine Learning material in the MoSEF Data Science Course of Paris 1 Panthéon Sorbonne.
-You can find the initial repo here: https://github.com/duchesnay/brain_anatomy_schizophrenia.git
-This project was was realised with [José Ángel García Sánchez 👨🏻‍💻](https://github.com/Pse1234)
-
+You can find the initial repo [here](https://github.com/duchesnay/brain_anatomy_schizophrenia.git)
+This project was realised with [José Ángel García Sánchez 👨🏻‍💻](https://github.com/Pse1234)
 
 Predict schizophrenia from brain grey matter (GM). schizophrenia is associated with diffuse and complex pattern of brain atrophy. We will try to learn a predictor of the clinical status (patient with schizophrenia vs. healthy control) using GM measurements on the brain participants.
 
